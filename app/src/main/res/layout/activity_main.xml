@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/scanner">
+
+
+    <Button
+        android:id="@+id/scan_btn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="openCamera"
+        android:textStyle="italic|bold"
+        android:background="@drawable/button_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:text="Scan" />
+
+    <Button
+        android:id="@+id/gallery_btn"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:textStyle="normal|bold"
+        android:onClick="openGallery"
+        android:layout_above="@+id/scan_btn"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_background"
+        android:text="Gallery" />
+</RelativeLayout>
